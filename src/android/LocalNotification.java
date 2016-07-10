@@ -103,6 +103,7 @@ public class LocalNotification extends CordovaPlugin {
      */
     @Override
     public void onDestroy() {
+        cancelAll();
         deviceready = false;
         isInBackground = true;
     }
